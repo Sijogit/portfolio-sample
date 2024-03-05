@@ -1,0 +1,232 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  font-family:'Protest Strike', sans-serif;;
+}
+.logo{
+    width: 130px;
+    margin-top: 50px;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    position: relative;
+}
+.navbar{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    width: 85%;
+    margin-left: 100px;
+}
+.listitem{
+    display: inline-block;
+    list-style: none;
+    margin: 10px;
+}.links{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 25px;
+}
+.links:hover{
+   color: red;
+}
+
+.title{
+    margin-top: 5%;
+    margin-left: 8%;
+}.title-h1{
+    font-size: 30px;
+    margin-bottom: 30px;
+}.download{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 5px;
+    margin: 10px 15px;
+}
+.name{
+    color: orange;
+    font-size: 50px;
+}
+ .title-image{ 
+    width: 45%;  
+    height: 55%;
+  position: absolute;
+  right: 0%;
+  bottom: 15%;
+ 
+  
+}
+.title-image img{
+    width: 350px;
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    bottom: 0%;
+    transform: translate(-50%);
+    transition: bottom 1s,left 1s;
+}
+.title-image:hover #shape{
+    bottom: 10%;
+}
+.title-image:hover #men{
+    left: 45%;
+}
+#about{
+ margin: 23% 8% 0% 5%;
+}
+.heading{
+    text-align: center;
+
+}
+.heading h2{
+    font-size: 30px;
+}
+.heading span{
+    font-size: 20px;
+    color: green;
+}
+.about-content{
+    display: grid;/*using for 2 contents displaying in colomn*/
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+.about-image img{
+    width: 80%;
+}
+.about-details{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: justify;
+}
+.informations{
+    margin-top: 5%;
+}
+.infobox{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;    
+}
+.infobox span{
+    margin-left: 5%;
+}
+#skills{
+    margin: 8% 8% 0% 8%;
+}
+.skill-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 5%;
+}
+.skill-img{
+    width: 90%;
+    padding-left: 4rem;
+}
+.bar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.base-bar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 0.5rem;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+.html-bar{
+    width: 95%;
+    background-color: orange;
+}
+.css-bar{
+    width: 88%;
+    background-color: orange;
+}
+.react-bar{
+    width: 85%;
+    background-color: orange;
+}
+.js-bar{
+    width: 80%;
+    background-color: orange;
+}
+#contact{
+    margin: 8% 8% 0% 8%;
+}
+.icon-set{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+.icons ,.up-arrow i{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+   
+    
+}
+.icons i, .up-arrow{
+    font-size: 40px;
+    color: black;
+    
+}.icons:hover{
+    /* color compination from linear-gradiant */
+    background-image: linear-gradient(red, yellow);
+}
+/* changing iconcolor into white */
+.icons:hover i{
+    color: white;
+    /* for animation */
+    animation: shake 1s infinite;
+}
+@keyframes shake{
+    10%{
+      transform: rotate(20deg);
+    }
+    20%{
+      transform: rotate(-20deg);
+    }
+    30%{
+        transform: rotate(20deg);
+      }
+      40%{
+        transform: rotate(-20de)
+      }
+      50%{
+        transform: rotate(-20de)
+      }
+}
+.footer p{
+    text-align: center;
+    font-weight: bolder
+    ;
+}
+/* this class used in icons&icons i */
+.up-arrow i{
+    float: right;
+    background-image: linear-gradient(red, yellow);
+    margin-bottom: 1%;
+}
+.up-arrow:hover i{
+    color: white;
+}
+html{
+    scroll-behavior: smooth;
+}
